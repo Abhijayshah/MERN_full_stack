@@ -1,0 +1,24 @@
+1. Teach you the theory + practical
+2. Provide you with a comprehensive study guide (notes for the day)
+3. Share the codes on github
+ーー
+Introduction to HTML
+
+
+
+- Elements are represented by tags
+- Tags are surrounded by angle brackets ‹ ›
+- Tags are used to define the start and end of an element
+- Elements can have attributes
+Attributes
+ニニニニニニニニニニニ=
+- Attributes are used to provide additional information about an element
+- Attributes are represented by a name and a value
+- Example: class = "className" or href = "https: //google.com"
+Block Elements vs Inline Elements
+ニニニニニニニニニニニニニニニニニニニニニニニニ=
+- Block Elements:
+- Take up the full width of the parent element
+- Start on a new line
+
+- Inline Elements:
