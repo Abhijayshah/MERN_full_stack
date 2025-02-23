@@ -1,0 +1,121 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.container{
+    display: flex;
+    justify-content:space-around;/* Space around items */
+    align-items:center;/* Items centered vertically */
+
+    flex-direction:row;  /* Items arranged horizontally */
+    height: 200px ;
+    border: 1px solid rgb(5, 2, 2);
+    
+}
+.item{
+    /* width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid blue
+}
+
+
+.container2{
+    flex-direction:column;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid rgb(5, 2, 2);
+}
+
+.box1{
+    position: relative;
+    z-index : 0 ;
+    background: rgb(41, 201, 17);
+    width: 200px;
+    height: 200px;  
+    border: 2px solid black;
+    margin: 6% 0 0 0;
+    padding: 4px;
+    display: flex;
+    /* margin-top: -50px; */
+   
+
+}
+
+.box2{
+    position: absolute;
+    z-index : 2;
+    background: red;
+    width: 180px;
+    height: 180px;
+    margin-top: -50px;
+
+    flex-direction:row;
+
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.box3{
+    position: relative;
+    z-index: 3;
+    background: lightcoral;
+    width: 150px;
+    height: 150px;
+    margin-top: -50px ;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+.item1 {
+    background: lightblue;
+    grid-column: 1 / 3; /* Spans columns 1 to 3 */
+}
+
+.item2 {
+    background: lightgreen;
+}
+
+.item3 {
+    background: lightcoral;
+}
+
+.item4 {
+    background: lightyellow;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .container4 {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}

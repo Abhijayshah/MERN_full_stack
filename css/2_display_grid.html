@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .grid-container {
-            height: 80vh;
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-gap: 10px;
+      }
 
+      .item1 {
+        background: lightblue;
+        grid-column: 1 / 3; /* Spans columns 1 to 3 */
+      }
 
+      .item2 {
+        background: lightgreen;
+      }
+
+      .item3 {
+        background: lightcoral;
+      }
+
+      .item4 {
+        background: lightyellow;
+      }
+
+      /* Responsive Grid Layouts */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 10px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr; /* Single column on small screens */
         }
+      }
     </style>
-</head>
-<body>
-    <div class="grid-container">
-        <div class="grid-item">item-1</div>
-        <div class="grid-item">item-2</div>
-        <div class="grid-item">item-3</div>
-        <div class="grid-item">item-4</div>
-        <div class="grid-item">item-5</div>
-        <div class="grid-item">item-6</div>
-        <div class="grid-item">item-7</div>
-        <div class="grid-item">item-8</div>
-        <div class="grid-item">item-9</div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Item 1</div>
+      <div class="item2">Item 2</div>
+      <div class="item3">Item 3</div>
+      <div class="item4">Item 4</div>
     </div>
-    
-</body>
+  </body>
 </html>

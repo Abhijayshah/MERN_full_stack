@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Program</title>
+</head>
+<body>
+
+<h1>Asynchronous Program</h1>
+
+<script>
+    let data;
+
+    function assignData() {
+        console.log("Assigning data...");
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                data = ["Amith", "John", "Suhas", "Farhaan"];
+                console.log("Data assigned");
+                resolve();
+            }, 3000);
+        });
+    }
+
+    function displayData() {
+        console.log("Displaying data...");
+        console.log(data);
+    }
+
+    assignData().then(displayData);
+</script>
+
+</body>
+</html>
